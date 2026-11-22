@@ -4,14 +4,14 @@
   "initials": "TN",
   "location": "Vietnam",
   "githubUrl": "https://github.com/Yin1090",
-  "headline": "Applied AI & Software Developer",
-  "subheadline": "Engineering robotics control, embedded systems, computer vision pipelines, and agent-native software tooling.",
-  "availabilityNote": "Focused on Applied AI, Software, Robotics, Embedded Systems & Computer Vision",
-  "bio": "Applied AI & Software Developer — building robotics control, embedded AIoT, computer vision, discrete PID, and SQL/MQTT fleet software.",
+  "headline": "Applied AI, ML/DL & Software Developer",
+  "subheadline": "Building machine learning, deep learning, computer vision, robotics control, and software systems.",
+  "availabilityNote": "Focused on Applied AI, Machine Learning, Deep Learning, Computer Vision, Robotics & Software",
+  "bio": "Applied AI, ML/DL & Software Developer — building machine learning, deep learning, computer vision, robotics control, and SQL/MQTT software.",
   "statusDots": ["#f59e0b", "#38bdf8", "#10b981"],
   "sidebarDomains": [
-    "Applied AI · Computer Vision",
-    "Robotics · Embedded Systems",
+    "Machine Learning · Deep Learning",
+    "Computer Vision · Robotics",
     "Python · Kotlin · ESM JS · SQL"
   ],
   "theme": {
@@ -62,33 +62,33 @@
   },
   "techStack": [
     {
-      "group": "Applied AI & Vision",
+      "group": "ML & Deep Learning",
       "accentKey": "amber",
-      "items": ["YOLOv8n", "OpenCV", "CLAHE + HSV", "MediaPipe", "Scikit-learn", "ONNX Runtime", "Click CLI"]
+      "items": ["Machine Learning", "Deep Learning", "YOLOv8n", "Scikit-learn", "ONNX Runtime", "OpenCV", "MediaPipe"]
     },
     {
-      "group": "Robotics & Embedded",
+      "group": "Robotics & Vision",
       "accentKey": "emerald",
-      "items": ["ROS 2 Jazzy", "RPLiDAR C1", "ESP32 MQTT", "GPIO18 PWM", "LabVIEW VI", "2-DOF PID", "8-Zone LiDAR"]
+      "items": ["ROS 2 Jazzy", "CLAHE + HSV", "RPLiDAR C1", "8-Zone LiDAR", "2-DOF PID", "LabVIEW VI", "MQTT Telemetry"]
     },
     {
       "group": "Software & Data",
       "accentKey": "cyan",
-      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "Tkinter"]
+      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "Click CLI"]
     }
   ],
   "projects": [
     {
       "id": "hand-gesture-smart-door-lock",
       "title": "Hand Gesture Door Lock",
-      "domain": "Embedded & Edge AIoT",
+      "domain": "Machine Learning & CV",
       "icon": "shield",
       "status": "26/26 Tests",
       "metric": "97-Feat · SVM",
       "accentKey": "amber",
       "url": "https://github.com/Yin1090/hand-gesture-smart-door-lock",
-      "description": "21-landmark 97-feature SVM classifier, 3-step gesture FSM, SG90 GPIO18 PWM lock, and Telegram alerts.",
-      "tags": ["Python", "Scikit-learn", "OpenCV", "GPIO18 PWM"]
+      "description": "21-landmark 97-feature KNN/SVM gesture classifier, 3-step access FSM, PWM actuator control, and alerts.",
+      "tags": ["Python", "Scikit-learn", "OpenCV", "ML Classifier"]
     },
     {
       "id": "amr-android-controller",
@@ -129,14 +129,14 @@
     {
       "id": "hybrid-yolov8-hsv-red-apple-detection",
       "title": "Hybrid Red Apple Detector",
-      "domain": "Computer Vision & AI",
+      "domain": "Deep Learning & CV",
       "icon": "eye",
-      "status": "42/42 Py Tests",
+      "status": "47/47 Py Tests",
       "metric": "mAP@0.5 0.9512",
       "accentKey": "emerald",
       "url": "https://github.com/Yin1090/hybrid-yolov8-hsv-red-apple-detection",
       "description": "4-layer YOLOv8n + CLAHE-V + Adaptive Split-HSV + NMS pipeline filtering crate FPs (56->46) & glare.",
-      "tags": ["YOLOv8n", "OpenCV", "Adaptive HSV", "ONNX"]
+      "tags": ["YOLOv8n", "Deep Learning", "OpenCV", "ONNX"]
     },
     {
       "id": "planar-arm-2dof-discrete-pid",
@@ -153,43 +153,43 @@
     {
       "id": "warehouse-robot-fleet-telemetry",
       "title": "Warehouse Fleet Telemetry",
-      "domain": "Embedded & Data Stack",
+      "domain": "Software & Data Stack",
       "icon": "layers",
       "status": "19/19 Py Tests",
       "metric": "3NF SQL · MQTT",
       "accentKey": "amber",
       "url": "https://github.com/Yin1090/warehouse-robot-fleet-telemetry",
-      "description": "MySQL 8.0 / SQLite 3NF DB, DENSE_RANK analytics, ESP32 DHT22/VL53L0X MQTT logger, and Tkinter UI.",
-      "tags": ["MySQL 3NF", "SQLAlchemy", "ESP32 MQTT", "Tkinter"]
+      "description": "MySQL 8.0 / SQLite 3NF DB, DENSE_RANK analytics, MQTT telemetry ingestion logger, and 6-tab Tkinter UI.",
+      "tags": ["MySQL 3NF", "SQLAlchemy", "MQTT", "Tkinter"]
     }
   ],
   "focusAreas": [
+    {
+      "title": "Machine Learning & Deep Learning",
+      "stack": "Scikit-learn · YOLOv8n · ONNX · OpenCV · MediaPipe",
+      "detail": "97-feature hand-landmark KNN/SVM classification and 4-layer YOLOv8n + CLAHE/HSV detection (mAP@0.5 0.9512)."
+    },
     {
       "title": "Autonomous Mobile Robotics & CLI",
       "stack": "Kotlin Compose · HTML5 ESM · Python Click · ROS 2",
       "detail": "3-screen Android controller, zero-dep 2D SLAM simulator, and agent-native CLI with 8-zone <40cm LiDAR interlock."
     },
     {
-      "title": "Computer Vision & Edge AIoT",
-      "stack": "YOLOv8n · OpenCV · MediaPipe · Scikit-learn · GPIO18",
-      "detail": "Coarse-to-fine YOLOv8n + CLAHE/HSV red apple detector (mAP@0.5 0.9512) and 97-feature gesture door lock."
-    },
-    {
-      "title": "Control Systems & Fleet Telemetry",
-      "stack": "LabVIEW VI · NumPy · MySQL 3NF · ESP32 MQTT",
-      "detail": "Dual-joint discrete PID & 2-DOF FK simulator paired with 3NF MySQL/SQLite fleet analytics and ESP32 MQTT ingestion."
+      "title": "Control Simulation & Data Software",
+      "stack": "LabVIEW VI · NumPy · MySQL 3NF · SQLAlchemy · MQTT",
+      "detail": "Dual-joint discrete PID & 2-DOF FK simulator paired with 3NF MySQL/SQLite fleet analytics and MQTT telemetry ingestion."
     }
   ],
   "snapshot": {
     "title": "Verified Engineering Snapshot",
     "tiles": [
-      { "label": "Portfolio Repos", "value": "7", "sub": "AI · Robotics · IoT", "accentKey": "cyan", "style": "metric" },
-      { "label": "Verified Tests", "value": "315", "sub": "264 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.9 },
-      { "label": "Core Domains", "value": "5", "sub": "CV · Embedded · Apps", "accentKey": "emerald", "style": "metric" }
+      { "label": "Portfolio Repos", "value": "7", "sub": "ML/DL · CV · Robotics", "accentKey": "cyan", "style": "metric" },
+      { "label": "Verified Tests", "value": "320", "sub": "269 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.92 },
+      { "label": "Core Domains", "value": "5", "sub": "ML · DL · CV · Apps", "accentKey": "emerald", "style": "metric" }
     ],
     "domainBars": [
       { "label": "AMR Teleoperation & CLI Suite", "metric": "134 Host + 51 JUnit4", "ratio": 0.94, "accentKey": "cyan" },
-      { "label": "Computer Vision & Edge AIoT", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.9, "accentKey": "emerald" },
+      { "label": "ML, Deep Learning & Vision", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.92, "accentKey": "emerald" },
       { "label": "2-DOF Planar Arm Discrete PID", "metric": "LabVIEW VI + 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
       { "label": "Warehouse Fleet 3NF & MQTT", "metric": "MySQL 3NF · 19 Py Tests", "ratio": 0.78, "accentKey": "amber" }
     ],
