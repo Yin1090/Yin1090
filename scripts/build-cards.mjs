@@ -403,10 +403,10 @@ export function renderReadmeMd(config) {
     .join('\n');
 
   const techAlt = escapeHtml(
-    sanitizeAltText('Tech Stack Matrix covering Robotics, Vision, and Agentic Systems')
+    sanitizeAltText('Tech Stack Matrix covering AI Agents, Vision, and Software Engineering')
   );
   const snapAlt = escapeHtml(
-    sanitizeAltText('Verified Engineering Snapshot of active stacks, tests, and prototypes')
+    sanitizeAltText('Verified Software Snapshot of active stacks and test suites')
   );
 
   return `## Hi, I'm ${config.displayName}
@@ -434,7 +434,7 @@ ${projectLinks}
 |---|---|---|
 ${focusRows}
 
-### Engineering Snapshot
+### Software & AI Snapshot
 
 <p align="left">
   <img src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="${snapAlt}" width="100%">
@@ -513,10 +513,10 @@ export function renderPreviewHtml(config) {
     .join('');
 
   const techAlt = escapeHtml(
-    sanitizeAltText('Tech Stack Matrix covering Robotics, Vision, and Agentic Systems')
+    sanitizeAltText('Tech Stack Matrix covering AI Agents, Vision, and Software Engineering')
   );
   const snapAlt = escapeHtml(
-    sanitizeAltText('Verified Engineering Snapshot of active stacks, tests, and prototypes')
+    sanitizeAltText('Verified Software Snapshot of active stacks and test suites')
   );
 
   return `<!DOCTYPE html>
@@ -860,7 +860,7 @@ ${cardsHtml}
 ${focusHtml}
         </div>
 
-        <h3>Engineering Snapshot</h3>
+        <h3>Software &amp; AI Snapshot</h3>
         <div>
           <img class="theme-img" src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="${snapAlt}">
           <img class="theme-img" src="./assets/snapshot-light.svg#gh-light-mode-only" alt="${snapAlt}">
@@ -870,7 +870,7 @@ ${focusHtml}
       <div class="tabpanel" data-tabpanel="projects" role="tabpanel" hidden>
         <div class="readme-crumb">${escapeHtml(config.username)} / repositories</div>
         <h2>Featured Projects</h2>
-        <p class="subtitle">Verified active builds across mobile robotics, edge vision, and local AI agent tooling.</p>
+        <p class="subtitle">Verified active builds across AI agents, computer vision, and full-stack software engineering.</p>
         <div class="detail-grid">
 ${projectDetailsHtml}
         </div>
@@ -879,7 +879,7 @@ ${projectDetailsHtml}
       <div class="tabpanel" data-tabpanel="stack" role="tabpanel" hidden>
         <div class="readme-crumb">${escapeHtml(config.username)} / tech-matrix</div>
         <h2>Tech Stack &amp; Focus Areas</h2>
-        <p class="subtitle">Strictly grounded technologies verified across local repositories and hardware prototypes.</p>
+        <p class="subtitle">Strictly grounded software and AI technologies verified across local repositories.</p>
         <div class="matrix-list">
 ${techGroupsHtml}
         </div>
