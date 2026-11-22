@@ -74,7 +74,7 @@
     {
       "group": "Software & Data",
       "accentKey": "cyan",
-      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "Click CLI"]
+      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "SQLite WAL"]
     }
   ],
   "projects": [
@@ -115,16 +115,16 @@
       "tags": ["HTML5", "Pure ESM JS", "2D SLAM", "Node 24"]
     },
     {
-      "id": "cli-anything-amr",
-      "title": "cli-anything-amr CLI",
-      "domain": "Applied AI & Robotics",
+      "id": "htf-agent-harness",
+      "title": "HTF Agent Harness",
+      "domain": "Applied AI & Runtime",
       "icon": "terminal",
-      "status": "83/83 Py Tests",
-      "metric": "10 Cmd Groups",
+      "status": "52 Py Tests",
+      "metric": "SQLite WAL · DAG",
       "accentKey": "teal",
-      "url": "https://github.com/Yin1090/cli-anything-amr",
-      "description": "Agent-native Click CLI & REPL with 10 command groups, 50-level undo/redo, kinematics, and PGM export.",
-      "tags": ["Python", "Click CLI", "REST API", "Kinematics"]
+      "url": "https://github.com/Yin1090/htf-agent-harness",
+      "description": "Zero-dep Python AI agent runtime with SQLite WAL crash recovery, SHA-256 compare-and-swap tools, and DAG planner.",
+      "tags": ["Python 3.12", "SQLite WAL", "SHA-256", "DAG Planner"]
     },
     {
       "id": "hybrid-yolov8-hsv-red-apple-detection",
@@ -170,9 +170,9 @@
       "detail": "97-feature hand-landmark KNN/SVM classification and 4-layer YOLOv8n + CLAHE/HSV detection (mAP@0.5 0.9512)."
     },
     {
-      "title": "Autonomous Mobile Robotics & CLI",
-      "stack": "Kotlin Compose · HTML5 ESM · Python Click · ROS 2",
-      "detail": "3-screen Android controller, zero-dep 2D SLAM simulator, and agent-native CLI with 8-zone <40cm LiDAR interlock."
+      "title": "Applied AI Agent Runtimes & Robotics",
+      "stack": "Python 3.12 · SQLite WAL · Kotlin Compose · HTML5 ESM",
+      "detail": "Verifiable AI agent runtime (HTF) with crash recovery alongside 3-screen Android AMR controller and 2D SLAM simulator."
     },
     {
       "title": "Control Simulation & Data Software",
@@ -184,11 +184,11 @@
     "title": "Verified Engineering Snapshot",
     "tiles": [
       { "label": "Portfolio Repos", "value": "7", "sub": "ML/DL · CV · Robotics", "accentKey": "cyan", "style": "metric" },
-      { "label": "Verified Tests", "value": "320", "sub": "269 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.92 },
+      { "label": "Verified Tests", "value": "289", "sub": "238 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.92 },
       { "label": "Core Domains", "value": "5", "sub": "ML · DL · CV · Apps", "accentKey": "emerald", "style": "metric" }
     ],
     "domainBars": [
-      { "label": "AMR Teleoperation & CLI Suite", "metric": "134 Host + 51 JUnit4", "ratio": 0.94, "accentKey": "cyan" },
+      { "label": "HTF AI Runtime & AMR Apps", "metric": "103 Host + 51 JUnit4", "ratio": 0.94, "accentKey": "cyan" },
       { "label": "ML, Deep Learning & Vision", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.92, "accentKey": "emerald" },
       { "label": "2-DOF Planar Arm Discrete PID", "metric": "LabVIEW VI + 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
       { "label": "Warehouse Fleet 3NF & MQTT", "metric": "MySQL 3NF · 19 Py Tests", "ratio": 0.78, "accentKey": "amber" }
