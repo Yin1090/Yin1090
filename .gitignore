@@ -1,0 +1,9 @@
+# Local preview and helper files (do not publish to Yin1090/Yin1090)
+preview.html
+PROFILE_SETTINGS.md
+scripts/publish-github.ps1
+scripts/verify-browser.mjs
+
+# OS / Editor
+.DS_Store
+Thumbs.db
