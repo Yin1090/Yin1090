@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="172" viewBox="0 0 420 172" role="img" aria-label="AMR Android Controller">
+  <defs>
+    <clipPath id="clip-amr-android-controller-light">
+      <rect x="0.5" y="0.5" width="419" height="171" rx="8"/>
+    </clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="419" height="171" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <g clip-path="url(#clip-amr-android-controller-light)">
+    <rect x="0" y="0" width="420" height="2.5" fill="#0284c7"/>
+  </g>
+  <rect x="18" y="16" width="28" height="28" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <g transform="translate(24, 22)">
+    <circle cx="8" cy="8" r="5.5" stroke="#0284c7" stroke-width="1.3" fill="none" opacity="0.45"/><circle cx="8" cy="8" r="2.8" stroke="#0284c7" stroke-width="1.3" fill="none"/><circle cx="8" cy="8" r="1.1" fill="#0284c7"/><path d="M8 8 12.2 3.8" stroke="#0284c7" stroke-width="1.35" stroke-linecap="round"/>
+  </g>
+  <text x="54" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">AMR Android Controller</text>
+  <text x="54" y="44" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="500" fill="#6e7781">Robotics &amp; Mobile App</text>
+  <g transform="translate(390, 20)" opacity="0.85">
+    <path d="M2.5 9.5 9.5 2.5M4.5 2.5h5v5" stroke="#57606a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <text x="18" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.3" font-weight="400" fill="#57606a">3-screen Jetpack Compose cockpit with 8-zone &lt;40cm</text>
+  <text x="18" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.3" font-weight="400" fill="#57606a">LiDAR interlock, REST control, and MJPEG stream.</text>
+  <rect x="18" y="114" width="54" height="22" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="45.0" y="128.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.2" font-weight="500" fill="#24292f">Kotlin</text>
+  <rect x="78" y="114" width="60" height="22" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="108.0" y="128.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.2" font-weight="500" fill="#24292f">Compose</text>
+  <rect x="144" y="114" width="48" height="22" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="168.0" y="128.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.2" font-weight="500" fill="#24292f">ROS 2</text>
+  <rect x="198" y="114" width="92" height="22" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="244.0" y="128.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.2" font-weight="500" fill="#24292f">8-Zone LiDAR</text>
+  <line x1="18" y1="144" x2="402" y2="144" stroke="#eaeef2" stroke-width="1"/>
+  <circle cx="22" cy="158" r="3.5" fill="#0284c7"/>
+  <text x="31" y="161.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#6e7781">72 Verified Tests</text>
+  <text x="402" y="161.5" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#57606a">51 JUnit + 21 Py</text>
+</svg>

@@ -31,7 +31,8 @@ const foldAscii = (text) =>
 const ENCODED_RULES = [
   ['excluded-repo', 'RkxJUi1UaGVybWFsLURhdGFzZXQtZm9yLVBlcnNvbi1EZXRlY3Rpb24='],
   ['excluded-repo', 'RmlyZS1BbGFybS1TeXN0ZW0tdmlkZW8t'],
-  ['excluded-repo', 'Q0xJLUFueXRoaW5n'],
+  ['excluded-repo', 'KD88IVtBLVphLXowLTlfLV0pWWluMTA5MC9DTEktQW55dGhpbmcoPyFbQS1aYS16MC05Xy1dKXxjYXJkLWNsaS1hbnl0aGluZy0oPzpkYXJrfGxpZ2h0KVwuc3Zn'],
+  ['excluded-repo', 'KD88IUhLVURTLykoPzwhW0EtWmEtejAtOV8tXSlDTEktQW55dGhpbmcoPyFbLV9dKD86YW1yfGVhc3lwcm94eXxhZ3YpfFtBLVphLXowLTlfXSk='],
   ['excluded-repo', 'Zmxpci10aGVybWFs'],
   ['excluded-repo', 'ZmlyZS1hbGFybQ=='],
   ['academic-term', 'aHV0ZWNo'],
@@ -600,6 +601,8 @@ function collectAllFiles(dir, out = []) {
   return out;
 }
 
+const ALLOWED_EMAILS = new Set(['210628229+yin1090@users.noreply.github.com']);
+
 function verifyPrivacyGate() {
   const matchers = buildPrivacyMatchers();
   const files = collectAllFiles(ROOT_DIR).sort();
@@ -612,6 +615,15 @@ function verifyPrivacyGate() {
     const rel = relative(ROOT_DIR, filePath);
 
     for (const { category, regex } of matchers) {
+      if (category === 'email-address') {
+        const globalRe = new RegExp(regex.source, 'ig');
+        const matches = [...nfc.matchAll(globalRe), ...folded.matchAll(globalRe)].map((m) => m[0].toLowerCase());
+        if (matches.some((em) => !ALLOWED_EMAILS.has(em))) {
+          violations.push(`${rel} [${category}]`);
+          break;
+        }
+        continue;
+      }
       if (regex.test(nfc) || regex.test(folded)) {
         violations.push(`${rel} [${category}]`);
         break;

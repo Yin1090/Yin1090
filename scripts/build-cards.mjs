@@ -402,11 +402,49 @@ export function renderReadmeMd(config) {
     .map((f) => `| **${f.title}** | \`${f.stack}\` | ${f.detail} |`)
     .join('\n');
 
+  const repoNotes = {
+    'hand-gesture-smart-door-lock': {
+      en: 'Edge AIoT access control extracting 97 wrist-normalized geometric features from 21 hand landmarks, 5-fold KNN/SVM classification, 3-step password FSM, SG90 GPIO18 PWM lock, and Telegram alerts (26 tests).',
+      vi: 'Hệ thống khóa cửa thông minh trích xuất 97 đặc trưng hình học từ 21 điểm mốc bàn tay, phân loại KNN/SVM, máy trạng thái 3 bước, xung PWM SG90 trên GPIO18 và cảnh báo Telegram (26 kiểm thử).',
+    },
+    'amr-android-controller': {
+      en: 'Native Kotlin & Jetpack Compose 3-screen mobile controller for Differential-Drive AMR over REST/MJPEG with an 8-zone <40 cm LiDAR active safety interlock and telemetry watchdog (51 JUnit4 + 21 Python tests).',
+      vi: 'Ứng dụng Android Kotlin và Jetpack Compose 3 màn hình điều khiển AMR vi sai 2 bánh qua REST và MJPEG, tích hợp khóa an toàn LiDAR 8 vùng dưới 40 cm và giám sát kết nối (51 JUnit4 và 21 kiểm thử Python).',
+    },
+    'amr-cockpit-simulator': {
+      en: 'Zero-dependency HTML5/ESM AMR cockpit and 2D physics/SLAM simulator with raycasted 8-zone LiDAR, 0.05 m occupancy grid, 640x480 tactical HUD, and automatic <0.40 m obstacle halt (30 Node tests).',
+      vi: 'Trình mô phỏng buồng lái và vật lý AMR thuần HTML5/ESM không thư viện ngoài, mô phỏng quét LiDAR 2D 8 vùng, bản đồ SLAM 0.05 m/ô và cơ chế tự dừng khi vật cản dưới 0.40 m (30 kiểm thử Node).',
+    },
+    'cli-anything-amr': {
+      en: 'Agent-native Python Click CLI and REPL harness exposing 10 command groups, 50-level undo/redo, dual differential kinematics profiles, safety interlock checks, and PGM map export (83 Python tests).',
+      vi: 'Giao diện dòng lệnh Python Click và REPL chuẩn agent-native với 10 nhóm lệnh, hoàn tác 50 bước, tính toán động học vi sai, kiểm tra khóa an toàn và xuất bản đồ định dạng PGM (83 kiểm thử Python).',
+    },
+    'hybrid-yolov8-hsv-red-apple-detection': {
+      en: '4-layer coarse-to-fine detector combining YOLOv8n, CLAHE-V contrast normalization, adaptive split-range HSV, geometric filtering, and NMS fusion achieving mAP@0.5 0.9512 (42 Python tests).',
+      vi: 'Hệ thống nhận diện táo đỏ 4 tầng kết hợp YOLOv8n, cân bằng sáng CLAHE kênh V, lọc màu HSV hai dải thích ứng, lọc hình học và NMS đạt mAP@0.5 0.9512 (42 kiểm thử Python).',
+    },
+    'planar-arm-2dof-discrete-pid': {
+      en: 'Dual LabVIEW 22.3.7 FINAL2.vi and bit-exact Python/NumPy discrete-time dual-joint PID controller with 2-DOF planar forward kinematics reaching 30.0123 deg and (6.83, 6.83) XY (43 Python tests).',
+      vi: 'Bộ điều khiển PID rời rạc hai khớp và động học thuận cánh tay phẳng 2 bậc tự do triển khai song song trên LabVIEW 22.3.7 và Python/NumPy đạt 30.0123 độ tại tọa độ (6.83, 6.83) (43 kiểm thử Python).',
+    },
+    'warehouse-robot-fleet-telemetry': {
+      en: 'MySQL 8.0 and SQLite 3NF fleet database with DENSE_RANK analytics over 1,000 route rows, sanitized ESP32 DHT22/VL53L0X MQTT telemetry logger, and 6-tab Tkinter dashboard (19 Python tests).',
+      vi: 'Nền tảng dữ liệu đội robot kho vận chuẩn 3NF trên MySQL và SQLite, phân tích xếp hạng DENSE_RANK trên 1.000 lộ trình, thu nhận MQTT từ ESP32 và giao diện Tkinter 6 thẻ (19 kiểm thử Python).',
+    },
+  };
+
+  const repoSummaryRows = config.projects
+    .map((p) => {
+      const note = repoNotes[p.id] || { en: p.description, vi: p.description };
+      return `| [${p.title}](${p.url}) | \`${p.domain}\` · \`${p.metric}\` | **EN:** ${note.en}<br>**VI:** ${note.vi} |`;
+    })
+    .join('\n');
+
   const techAlt = escapeHtml(
-    sanitizeAltText('Tech Stack Matrix covering AI Agents, Vision, and Software Engineering')
+    sanitizeAltText('Tech Stack Matrix covering Applied AI, Robotics, Embedded, Computer Vision, and Software Engineering')
   );
   const snapAlt = escapeHtml(
-    sanitizeAltText('Verified Software Snapshot of active stacks and test suites')
+    sanitizeAltText('Verified Engineering Snapshot of active repositories and test suites')
   );
 
   return `## Hi, I'm ${config.displayName}
@@ -415,26 +453,45 @@ export function renderReadmeMd(config) {
 
 \`${config.location}\` · ${config.availabilityNote}
 
-### Tech Stack
+### Overview / Tổng quan
+
+This GitHub profile presents an integrated engineering portfolio across **Applied AI**, **Software**, **Robotics**, **Embedded** systems, and **Computer Vision**. Every linked repository ships runnable source code, calibrated datasets, and automated offline verification covering 315 verified tests across 7 repositories.
+
+Hồ sơ GitHub này giới thiệu danh mục dự án kỹ thuật trong các lĩnh vực **Applied AI**, **Software** (phần mềm), **Robotics**, **Embedded** (hệ thống nhúng) và **Computer Vision** (thị giác máy tính). Mỗi kho lưu trữ đều đi kèm mã nguồn chạy thực tế, bộ dữ liệu chuẩn hóa và quy trình kiểm thử tự động cho toàn bộ 7 dự án.
+
+### Tech Stack / Công nghệ cốt lõi
 
 <p align="left">
   <img src="./assets/tech-stack-dark.svg#gh-dark-mode-only" alt="${techAlt}" width="100%">
   <img src="./assets/tech-stack-light.svg#gh-light-mode-only" alt="${techAlt}" width="100%">
 </p>
 
-### Featured Projects
+### Architecture & Featured Repositories / Kiến trúc & Dự án nổi bật
 
 <p align="left">
 ${projectLinks}
 </p>
 
-### Engineering Focus
+| Repository / Dự án | Domain & Metric | Architecture Summary / Tóm tắt kiến trúc (EN / VI) |
+|---|---|---|
+${repoSummaryRows}
+
+### Engineering Focus, Setup & Verification / Trọng tâm kỹ thuật, Cài đặt & Kiểm thử
 
 | Domain | Core Stack | Focus |
 |---|---|---|
 ${focusRows}
 
-### Software & AI Snapshot
+To regenerate the dual-theme SVG profile cards, update the preview page, and verify strict XML well-formedness, config sync, offline assets, and privacy rules locally using Node 24, run the build and verification commands from the repository root:
+
+Hướng dẫn cài đặt và chạy kiểm thử xác minh cục bộ: sử dụng Node 24 tại thư mục gốc của kho lưu trữ để sinh lại toàn bộ thẻ SVG hai giao diện, cập nhật trang xem trước và kiểm tra tính hợp lệ XML, đồng bộ cấu hình cũng như quy tắc bảo mật:
+
+\`\`\`bash
+node scripts/build-cards.mjs
+node scripts/verify-profile.mjs
+\`\`\`
+
+### Snapshot / Thống kê kỹ thuật
 
 <p align="left">
   <img src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="${snapAlt}" width="100%">
@@ -474,7 +531,7 @@ export function renderPreviewHtml(config) {
             <div class="detail-tags">${tagsHtml}</div>
             <div class="detail-foot">
               <span>${escapeHtml(p.status)}</span>
-              <a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">View Repositories</a>
+              <a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">View Repository</a>
             </div>
           </article>`;
     })
@@ -513,10 +570,10 @@ export function renderPreviewHtml(config) {
     .join('');
 
   const techAlt = escapeHtml(
-    sanitizeAltText('Tech Stack Matrix covering AI Agents, Vision, and Software Engineering')
+    sanitizeAltText('Tech Stack Matrix covering Applied AI, Robotics, Embedded, Computer Vision, and Software Engineering')
   );
   const snapAlt = escapeHtml(
-    sanitizeAltText('Verified Software Snapshot of active stacks and test suites')
+    sanitizeAltText('Verified Engineering Snapshot of active repositories and test suites')
   );
 
   return `<!DOCTYPE html>
@@ -870,7 +927,7 @@ ${focusHtml}
       <div class="tabpanel" data-tabpanel="projects" role="tabpanel" hidden>
         <div class="readme-crumb">${escapeHtml(config.username)} / repositories</div>
         <h2>Featured Projects</h2>
-        <p class="subtitle">Verified active builds across AI agents, computer vision, and full-stack software engineering.</p>
+        <p class="subtitle">Verified active builds across Applied AI, robotics, embedded systems, computer vision, and software engineering.</p>
         <div class="detail-grid">
 ${projectDetailsHtml}
         </div>
@@ -879,7 +936,7 @@ ${projectDetailsHtml}
       <div class="tabpanel" data-tabpanel="stack" role="tabpanel" hidden>
         <div class="readme-crumb">${escapeHtml(config.username)} / tech-matrix</div>
         <h2>Tech Stack &amp; Focus Areas</h2>
-        <p class="subtitle">Strictly grounded software and AI technologies verified across local repositories.</p>
+        <p class="subtitle">Strictly grounded Applied AI, robotics, embedded, computer vision, and software technologies verified across local repositories.</p>
         <div class="matrix-list">
 ${techGroupsHtml}
         </div>
@@ -931,8 +988,8 @@ export function validateConfig(config) {
   if (!config.bio || config.bio.length > 160) {
     throw new Error(`bio length must be 1..160 chars, got ${config.bio?.length ?? 0}`);
   }
-  if (!Array.isArray(config.projects) || config.projects.length < 4 || config.projects.length > 6) {
-    throw new Error(`projects length must be 4..6, got ${config.projects?.length ?? 0}`);
+  if (!Array.isArray(config.projects) || config.projects.length < 4 || config.projects.length > 8) {
+    throw new Error(`projects length must be 4..8, got ${config.projects?.length ?? 0}`);
   }
 }
 

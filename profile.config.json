@@ -5,14 +5,14 @@
   "location": "Vietnam",
   "githubUrl": "https://github.com/Yin1090",
   "headline": "Applied AI & Software Developer",
-  "subheadline": "Building resilient AI agent runtimes, LLM gateways, computer vision pipelines, and typed TypeScript / Python / Rust software.",
-  "availabilityNote": "Focused on AI Agents, LLM Infrastructure, Computer Vision & Software Engineering",
-  "bio": "Applied AI & Software Developer — building resilient AI agent runtimes, LLM gateways, computer vision pipelines, and TypeScript / Python / Rust tooling.",
+  "subheadline": "Engineering robotics control, embedded systems, computer vision pipelines, and agent-native software tooling.",
+  "availabilityNote": "Focused on Applied AI, Software, Robotics, Embedded Systems & Computer Vision",
+  "bio": "Applied AI & Software Developer — building robotics control, embedded AIoT, computer vision, discrete PID, and SQL/MQTT fleet software.",
   "statusDots": ["#f59e0b", "#38bdf8", "#10b981"],
   "sidebarDomains": [
-    "AI Agents · LLM Gateways · Eval",
-    "Computer Vision · ML Pipelines",
-    "TypeScript · Python · Rust · SQL"
+    "Applied AI · Computer Vision",
+    "Robotics · Embedded Systems",
+    "Python · Kotlin · ESM JS · SQL"
   ],
   "theme": {
     "dark": {
@@ -62,124 +62,136 @@
   },
   "techStack": [
     {
-      "group": "AI & Agentic Systems",
+      "group": "Applied AI & Vision",
       "accentKey": "amber",
-      "items": ["LLM Gateways", "Multi-Agent DAG", "Policy Hooks", "Eval Suites", "Agent CLIs", "Context Handoff"]
+      "items": ["YOLOv8n", "OpenCV", "CLAHE + HSV", "MediaPipe", "Scikit-learn", "ONNX Runtime", "Click CLI"]
     },
     {
-      "group": "Computer Vision & ML",
+      "group": "Robotics & Embedded",
       "accentKey": "emerald",
-      "items": ["YOLOv8n", "OpenCV", "MediaPipe", "Scikit-learn", "Hybrid HSV", "PyTorch"]
+      "items": ["ROS 2 Jazzy", "RPLiDAR C1", "ESP32 MQTT", "GPIO18 PWM", "LabVIEW VI", "2-DOF PID", "8-Zone LiDAR"]
     },
     {
-      "group": "Software & Data Stack",
+      "group": "Software & Data",
       "accentKey": "cyan",
-      "items": ["TypeScript", "Node.js", "React 19", "Fastify 5", "Python 3.12", "Rust / Cargo", "Kotlin", "SQLite / MySQL"]
+      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "Tkinter"]
     }
   ],
   "projects": [
     {
-      "id": "ai-agent-harness",
-      "title": "AI Agent Harness",
-      "domain": "Agentic Runtime",
-      "icon": "layers",
-      "status": "Active Build",
-      "metric": "217/217 tests",
-      "accentKey": "amber",
-      "url": "https://github.com/Yin1090?tab=repositories",
-      "description": "4-workspace TypeScript monorepo with OpenAI gateway, policy hooks, multi-worker DAG blackboard, and SQLite WAL checkpoints.",
-      "tags": ["TypeScript", "Node.js", "React 19", "Fastify 5"]
-    },
-    {
-      "id": "ai-harness-proxy",
-      "title": "AI Harness Proxy & Studio",
-      "domain": "LLM Gateway & Eval",
-      "icon": "terminal",
-      "status": "Verified Suite",
-      "metric": "110 Py tests",
-      "accentKey": "blue",
-      "url": "https://github.com/Yin1090?tab=repositories",
-      "description": "Layered Python LLM gateway with A01-A11 audit engine, quota guard, sandboxed execution, and Electron 33 studio.",
-      "tags": ["Python 3.12", "SQLite", "Electron", "Eval A01-A11"]
-    },
-    {
-      "id": "htf-rust-systems",
-      "title": "HTF & Rust Systems Lab",
-      "domain": "Reliability & Systems",
+      "id": "hand-gesture-smart-door-lock",
+      "title": "Hand Gesture Door Lock",
+      "domain": "Embedded & Edge AIoT",
       "icon": "shield",
-      "status": "Verified Core",
-      "metric": "48 + 64 tests",
-      "accentKey": "orange",
-      "url": "https://github.com/Yin1090?tab=repositories",
-      "description": "Crash-safe Python stdlib CAS/DAG execution foundation paired with Cargo 2024 Rust crates with zero unsafe code.",
-      "tags": ["Python Stdlib", "SQLite WAL", "Rust 2024", "Clippy"]
+      "status": "26/26 Tests",
+      "metric": "97-Feat · SVM",
+      "accentKey": "amber",
+      "url": "https://github.com/Yin1090/hand-gesture-smart-door-lock",
+      "description": "21-landmark 97-feature SVM classifier, 3-step gesture FSM, SG90 GPIO18 PWM lock, and Telegram alerts.",
+      "tags": ["Python", "Scikit-learn", "OpenCV", "GPIO18 PWM"]
     },
     {
-      "id": "vision-ml-suite",
-      "title": "Hybrid Vision & ML Suite",
-      "domain": "Computer Vision",
-      "icon": "eye",
-      "status": "Benchmarked",
-      "metric": "mAP@0.5 0.951",
-      "accentKey": "emerald",
-      "url": "https://github.com/Yin1090?tab=repositories",
-      "description": "Hybrid YOLOv8n + Adaptive HSV object detector (F1 0.88) and MediaPipe 21-landmark 97-feature Scikit-learn SVM classifier.",
-      "tags": ["YOLOv8n", "OpenCV", "MediaPipe", "Scikit-learn"]
-    },
-    {
-      "id": "mobile-web-cockpit",
-      "title": "Android Cockpit & Simulator",
-      "domain": "Mobile & Web App",
+      "id": "amr-android-controller",
+      "title": "AMR Android Controller",
+      "domain": "Robotics & Mobile App",
       "icon": "radar",
-      "status": "Verified App",
-      "metric": "51 + 24 tests",
+      "status": "72 Verified Tests",
+      "metric": "51 JUnit + 21 Py",
       "accentKey": "cyan",
-      "url": "https://github.com/Yin1090?tab=repositories",
-      "description": "Kotlin Compose 3-screen REST/MJPEG telemetry client paired with an interactive HTML5 canvas simulator and safety logic.",
-      "tags": ["Kotlin", "Compose", "REST API", "HTML5 ESM"]
+      "url": "https://github.com/Yin1090/amr-android-controller",
+      "description": "3-screen Jetpack Compose cockpit with 8-zone <40cm LiDAR interlock, REST control, and MJPEG stream.",
+      "tags": ["Kotlin", "Compose", "ROS 2", "8-Zone LiDAR"]
     },
     {
-      "id": "data-cli-tooling",
-      "title": "Analytics DB & Agent CLIs",
-      "domain": "Data & CLI Tooling",
-      "icon": "cpu",
-      "status": "Verified Suite",
-      "metric": "64 + 63 tests",
+      "id": "amr-cockpit-simulator",
+      "title": "AMR Cockpit Simulator",
+      "domain": "Robotics & Web Sim",
+      "icon": "layers",
+      "status": "30/30 Node Tests",
+      "metric": "0.05m SLAM Grid",
+      "accentKey": "blue",
+      "url": "https://github.com/Yin1090/amr-cockpit-simulator",
+      "description": "Zero-dependency HTML5/ESM AMR cockpit with 2D LiDAR raycasting, 0.05m SLAM grid, and <0.40m halt.",
+      "tags": ["HTML5", "Pure ESM JS", "2D SLAM", "Node 24"]
+    },
+    {
+      "id": "cli-anything-amr",
+      "title": "cli-anything-amr CLI",
+      "domain": "Applied AI & Robotics",
+      "icon": "terminal",
+      "status": "83/83 Py Tests",
+      "metric": "10 Cmd Groups",
       "accentKey": "teal",
-      "url": "https://github.com/Yin1090?tab=repositories",
-      "description": "3NF MySQL & SQLAlchemy analytics dashboard with MQTT ingestion alongside JSON-first Click CLIs and context handoff.",
-      "tags": ["MySQL 3NF", "SQLAlchemy", "Click CLI", "MQTT"]
+      "url": "https://github.com/Yin1090/cli-anything-amr",
+      "description": "Agent-native Click CLI & REPL with 10 command groups, 50-level undo/redo, kinematics, and PGM export.",
+      "tags": ["Python", "Click CLI", "REST API", "Kinematics"]
+    },
+    {
+      "id": "hybrid-yolov8-hsv-red-apple-detection",
+      "title": "Hybrid Red Apple Detector",
+      "domain": "Computer Vision & AI",
+      "icon": "eye",
+      "status": "42/42 Py Tests",
+      "metric": "mAP@0.5 0.9512",
+      "accentKey": "emerald",
+      "url": "https://github.com/Yin1090/hybrid-yolov8-hsv-red-apple-detection",
+      "description": "4-layer YOLOv8n + CLAHE-V + Adaptive Split-HSV + NMS pipeline filtering crate FPs (56->46) & glare.",
+      "tags": ["YOLOv8n", "OpenCV", "Adaptive HSV", "ONNX"]
+    },
+    {
+      "id": "planar-arm-2dof-discrete-pid",
+      "title": "2-DOF Planar Arm PID",
+      "domain": "Robotics & Control",
+      "icon": "cpu",
+      "status": "43/43 Py Tests",
+      "metric": "30.0123 deg FK",
+      "accentKey": "orange",
+      "url": "https://github.com/Yin1090/planar-arm-2dof-discrete-pid",
+      "description": "LabVIEW FINAL2.vi & bit-exact Python/NumPy discrete PID + 2-DOF kinematics (30.0123 deg, 6.83 XY).",
+      "tags": ["LabVIEW VI", "Python", "NumPy", "2-DOF FK"]
+    },
+    {
+      "id": "warehouse-robot-fleet-telemetry",
+      "title": "Warehouse Fleet Telemetry",
+      "domain": "Embedded & Data Stack",
+      "icon": "layers",
+      "status": "19/19 Py Tests",
+      "metric": "3NF SQL · MQTT",
+      "accentKey": "amber",
+      "url": "https://github.com/Yin1090/warehouse-robot-fleet-telemetry",
+      "description": "MySQL 8.0 / SQLite 3NF DB, DENSE_RANK analytics, ESP32 DHT22/VL53L0X MQTT logger, and Tkinter UI.",
+      "tags": ["MySQL 3NF", "SQLAlchemy", "ESP32 MQTT", "Tkinter"]
     }
   ],
   "focusAreas": [
     {
-      "title": "AI Agent Runtimes & LLM Gateways",
-      "stack": "TypeScript · Fastify 5 · Python · SQLite",
-      "detail": "Multi-worker DAG orchestration, circuit-breaker failover gateways, policy hooks, CAS/WAL checkpoints, and eval suites."
+      "title": "Autonomous Mobile Robotics & CLI",
+      "stack": "Kotlin Compose · HTML5 ESM · Python Click · ROS 2",
+      "detail": "3-screen Android controller, zero-dep 2D SLAM simulator, and agent-native CLI with 8-zone <40cm LiDAR interlock."
     },
     {
-      "title": "Computer Vision & Applied ML",
-      "stack": "YOLOv8n · OpenCV · MediaPipe · Scikit-learn",
-      "detail": "Coarse-to-fine YOLO+HSV object detection (mAP@0.5 0.9512, F1 0.88) and 21-landmark 97-feature SVM classification pipelines."
+      "title": "Computer Vision & Edge AIoT",
+      "stack": "YOLOv8n · OpenCV · MediaPipe · Scikit-learn · GPIO18",
+      "detail": "Coarse-to-fine YOLOv8n + CLAHE/HSV red apple detector (mAP@0.5 0.9512) and 97-feature gesture door lock."
     },
     {
-      "title": "Software Apps, Data & CLI Tooling",
-      "stack": "React 19 · Kotlin · Rust 2024 · MySQL 3NF",
-      "detail": "Cross-platform UIs (React/Electron/Kotlin Compose), zero-unsafe Rust crates, 3NF SQL analytics, and JSON-first CLIs."
+      "title": "Control Systems & Fleet Telemetry",
+      "stack": "LabVIEW VI · NumPy · MySQL 3NF · ESP32 MQTT",
+      "detail": "Dual-joint discrete PID & 2-DOF FK simulator paired with 3NF MySQL/SQLite fleet analytics and ESP32 MQTT ingestion."
     }
   ],
   "snapshot": {
-    "title": "Verified Software Snapshot",
+    "title": "Verified Engineering Snapshot",
     "tiles": [
-      { "label": "Active Stacks", "value": "6", "sub": "AI · Vision · Systems", "accentKey": "cyan", "style": "metric" },
-      { "label": "Automated Tests", "value": "439+", "sub": "217 TS · 110 Py · 48 HTF · 64 Rust", "accentKey": "amber", "style": "ring", "ringProgress": 0.84 },
-      { "label": "Verified Suites", "value": "6", "sub": "TS · Py · Rust · Kotlin", "accentKey": "emerald", "style": "metric" }
+      { "label": "Portfolio Repos", "value": "7", "sub": "AI · Robotics · IoT", "accentKey": "cyan", "style": "metric" },
+      { "label": "Verified Tests", "value": "315", "sub": "264 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.9 },
+      { "label": "Core Domains", "value": "5", "sub": "CV · Embedded · Apps", "accentKey": "emerald", "style": "metric" }
     ],
     "domainBars": [
-      { "label": "AI Agent Runtimes & Gateways", "metric": "217 TS + 110 Py + 48 HTF", "ratio": 0.92, "accentKey": "amber" },
-      { "label": "Computer Vision & ML Pipelines", "metric": "mAP 0.951 · F1 0.88 · SVM", "ratio": 0.84, "accentKey": "emerald" },
-      { "label": "Systems Rust, SQL & CLI Tooling", "metric": "64 Rust + 127 CLI/Skill tests", "ratio": 0.82, "accentKey": "orange" },
-      { "label": "Mobile & Web App Engineering", "metric": "Kotlin Compose · HTML5 ESM", "ratio": 0.78, "accentKey": "cyan" }
+      { "label": "AMR Teleoperation & CLI Suite", "metric": "134 Host + 51 JUnit4", "ratio": 0.94, "accentKey": "cyan" },
+      { "label": "Computer Vision & Edge AIoT", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.9, "accentKey": "emerald" },
+      { "label": "2-DOF Planar Arm Discrete PID", "metric": "LabVIEW VI + 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
+      { "label": "Warehouse Fleet 3NF & MQTT", "metric": "MySQL 3NF · 19 Py Tests", "ratio": 0.78, "accentKey": "amber" }
     ],
     "footnote": "100% locally verified metrics — zero external stats"
   }
