@@ -1,6 +1,6 @@
 ## Hi, I'm Tín Nguyễn
 
-**Applied AI, ML/DL & Software Developer** — building machine learning, deep learning, computer vision, robotics control, and software systems.
+**Applied AI & Robotics Developer** — building machine learning, deep learning, computer vision, and autonomous robot systems from perception to motion control.
 
 `Vietnam` · Focused on Applied AI, Machine Learning, Deep Learning, Computer Vision, Robotics & Software
 
