@@ -404,28 +404,28 @@ export function renderReadmeMd(config) {
 
   const repoNotes = {
     'hand-gesture-smart-door-lock': {
-      en: 'Machine learning gesture access control extracting 97 wrist-normalized geometric features from 21 hand landmarks, 5-fold KNN/SVM classification, 3-step password FSM, PWM lock control, and Telegram alerts (26 tests).',
-      vi: 'Hệ thống khóa cửa nhận diện cử chỉ bằng máy học (Machine Learning) trích xuất 97 đặc trưng hình học từ 21 điểm mốc bàn tay, phân loại KNN/SVM, máy trạng thái 3 bước, điều khiển khóa PWM và cảnh báo Telegram (26 kiểm thử).',
+      en: 'Machine learning gesture access control extracting 97 wrist-normalized geometric features from 21 hand landmarks, 5-fold KNN/SVM classification, 3-step password FSM, PWM lock control, and Telegram alerts.',
+      vi: 'Hệ thống khóa cửa nhận diện cử chỉ bằng máy học (Machine Learning) trích xuất 97 đặc trưng hình học chuẩn hóa từ 21 điểm mốc bàn tay, phân loại KNN/SVM 5-fold, máy trạng thái 3 bước, điều khiển khóa PWM và cảnh báo Telegram.',
     },
     'amr-android-controller': {
-      en: 'Native Kotlin & Jetpack Compose 3-screen mobile controller for Differential-Drive AMR over REST/MJPEG with an 8-zone <40 cm LiDAR active safety interlock and telemetry watchdog (51 JUnit4 + 21 Python tests).',
-      vi: 'Ứng dụng Android Kotlin và Jetpack Compose 3 màn hình điều khiển AMR vi sai 2 bánh qua REST và MJPEG, tích hợp khóa an toàn LiDAR 8 vùng dưới 40 cm và giám sát kết nối (51 JUnit4 và 21 kiểm thử Python).',
+      en: 'Native Kotlin & Jetpack Compose 3-screen mobile controller for Differential-Drive AMR over REST (`:8080`) and MJPEG (`:8081`) with an 8-zone <40 cm LiDAR active safety interlock and 1,500 ms connection watchdog.',
+      vi: 'Ứng dụng Android Kotlin và Jetpack Compose 3 màn hình điều khiển AMR vi sai 2 bánh qua REST (`:8080`) và MJPEG (`:8081`), tích hợp khóa an toàn LiDAR 8 vùng dưới 40 cm và watchdog giám sát kết nối 1.500 ms.',
     },
     'amr-cockpit-simulator': {
-      en: 'Zero-dependency HTML5/ESM AMR cockpit and 2D physics/SLAM simulator with raycasted 8-zone LiDAR, 0.05 m occupancy grid, 640x480 tactical HUD, and automatic <0.40 m obstacle halt (30 Node tests).',
-      vi: 'Trình mô phỏng buồng lái và vật lý AMR thuần HTML5/ESM không thư viện ngoài, mô phỏng quét LiDAR 2D 8 vùng, bản đồ SLAM 0.05 m/ô và cơ chế tự dừng khi vật cản dưới 0.40 m (30 kiểm thử Node).',
+      en: 'Zero-dependency HTML5/ESM AMR cockpit and 2D physics/SLAM simulator with raycasted 8-zone LiDAR, `101×99` (`0.05 m/cell`) occupancy grid, 640×480 tactical HUD, and automatic <0.40 m obstacle halt.',
+      vi: 'Trình mô phỏng buồng lái và vật lý AMR thuần HTML5/ESM không thư viện ngoài, mô phỏng quét LiDAR 2D 8 vùng, bản đồ SLAM `101×99` (`0,05 m/ô`), HUD 640×480 và cơ chế tự dừng khi vật cản dưới 0,40 m.',
     },
     'hybrid-yolov8-hsv-red-apple-detection': {
-      en: '4-layer deep learning and computer vision detector combining YOLOv8n, CLAHE-V contrast normalization, adaptive split-range HSV, geometric filtering, and NMS fusion achieving mAP@0.5 0.9512 (47 Python tests).',
-      vi: 'Hệ thống học sâu (Deep Learning) và thị giác máy tính 4 tầng kết hợp YOLOv8n, cân bằng sáng CLAHE kênh V, lọc màu HSV hai dải thích ứng, lọc hình học và NMS đạt mAP@0.5 0.9512 (47 kiểm thử Python).',
+      en: '4-layer deep learning and computer vision detector combining YOLOv8n (`100` epochs, mAP@0.5 `0.9512`), CLAHE-V contrast normalization, adaptive split-range HSV, geometric filtering (`56 -> 46` crate FPs), and NMS fusion.',
+      vi: 'Hệ thống học sâu (Deep Learning) và thị giác máy tính 4 tầng kết hợp YOLOv8n (`100` epoch, mAP@0.5 `0.9512`), cân bằng sáng CLAHE kênh V, lọc màu HSV hai dải thích ứng, lọc hình học giảm nhận nhầm (`56 -> 46`) và NMS.',
     },
     'planar-arm-2dof-discrete-pid': {
-      en: 'Python/NumPy discrete-time dual-joint PID controller and 2-DOF planar forward kinematics simulator reaching 30.0123 deg and (6.83, 6.83) XY, accompanied by a reference LabVIEW VI (43 Python tests).',
-      vi: 'Bộ mô phỏng điều khiển PID rời rạc hai khớp và động học thuận cánh tay phẳng 2 bậc tự do bằng Python/NumPy đạt 30.0123 độ tại tọa độ (6.83, 6.83), kèm tệp LabVIEW VI đối chiếu (43 kiểm thử Python).',
+      en: 'Python/NumPy discrete-time dual-joint PID controller and 2-DOF planar forward kinematics simulator reaching `30.0123°` at `(6.83, 6.83)` XY, accompanied by a reference LabVIEW VI.',
+      vi: 'Bộ mô phỏng điều khiển PID rời rạc hai khớp và động học thuận cánh tay phẳng 2 bậc tự do bằng Python/NumPy đạt `30,0123°` tại tọa độ `(6.83, 6.83)`, kèm tệp LabVIEW VI đối chiếu.',
     },
     'warehouse-robot-fleet-telemetry': {
-      en: 'MySQL 8.0 and SQLite 3NF fleet database with DENSE_RANK analytics over 1,000 route rows, sanitized MQTT telemetry ingestion logger, and 6-tab Tkinter dashboard (19 Python tests).',
-      vi: 'Nền tảng dữ liệu đội robot kho vận chuẩn 3NF trên MySQL và SQLite, phân tích xếp hạng DENSE_RANK trên 1.000 lộ trình, dịch vụ thu nhận telemetry MQTT và giao diện Tkinter 6 thẻ (19 kiểm thử Python).',
+      en: 'MySQL 8.0 and SQLite 3NF fleet database with `DENSE_RANK` analytics over `1,000` logged robot routes, sanitized MQTT telemetry ingestion logger, and 6-tab Tkinter monitoring dashboard.',
+      vi: 'Nền tảng dữ liệu đội robot kho vận chuẩn 3NF trên MySQL 8.0 và SQLite, phân tích xếp hạng `DENSE_RANK` trên `1.000` lộ trình thực tế, dịch vụ thu nhận telemetry MQTT và giao diện giám sát Tkinter 6 thẻ.',
     },
   };
 
@@ -440,7 +440,7 @@ export function renderReadmeMd(config) {
     sanitizeAltText('Tech Stack Matrix covering Machine Learning, Deep Learning, Computer Vision, Robotics, and Software Engineering')
   );
   const snapAlt = escapeHtml(
-    sanitizeAltText('Verified Engineering Snapshot of active repositories and test suites')
+    sanitizeAltText('Real-World Engineering Snapshot highlighting vision mAP, 2D SLAM mapping, ML features, and fleet telemetry')
   );
 
   return `## Hi, I'm ${config.displayName}
@@ -451,9 +451,9 @@ export function renderReadmeMd(config) {
 
 ### Overview / Tổng quan
 
-This GitHub profile presents an integrated engineering portfolio across **Applied AI**, **Machine Learning**, **Deep Learning**, **Computer Vision**, **Robotics**, and **Software** engineering. Every linked repository ships runnable source code, calibrated datasets, and automated offline verification covering 237 verified tests across 6 repositories.
+This GitHub profile presents 6 end-to-end engineering projects across **Applied AI**, **Machine Learning**, **Deep Learning**, **Computer Vision**, **Robotics**, and **Software** engineering. Each linked repository ships runnable source code, calibrated datasets, and measured system benchmarks.
 
-Hồ sơ GitHub này giới thiệu danh mục dự án kỹ thuật trong các lĩnh vực **Applied AI**, **Machine Learning** (máy học), **Deep Learning** (học sâu), **Computer Vision** (thị giác máy tính), **Robotics** và **Software** (kỹ thuật phần mềm). Mỗi kho lưu trữ đều đi kèm mã nguồn chạy thực tế, bộ dữ liệu chuẩn hóa và quy trình kiểm thử tự động (237 kiểm thử trên 6 dự án).
+Hồ sơ GitHub này giới thiệu 6 dự án kỹ thuật hoàn chỉnh trong các lĩnh vực **Applied AI**, **Machine Learning** (máy học), **Deep Learning** (học sâu), **Computer Vision** (thị giác máy tính), **Robotics** và **Software** (kỹ thuật phần mềm). Mỗi kho lưu trữ đều đi kèm mã nguồn chạy thực tế, bộ dữ liệu chuẩn hóa và các chỉ số kỹ thuật đo được từ hệ thống.
 
 ### Tech Stack / Công nghệ cốt lõi
 
@@ -472,22 +472,13 @@ ${projectLinks}
 |---|---|---|
 ${repoSummaryRows}
 
-### Engineering Focus, Setup & Verification / Trọng tâm kỹ thuật, Cài đặt & Kiểm thử
+### Engineering Focus / Trọng tâm kỹ thuật
 
 | Domain | Core Stack | Focus |
 |---|---|---|
 ${focusRows}
 
-To regenerate the dual-theme SVG profile cards, update the preview page, and verify strict XML well-formedness, config sync, offline assets, and privacy rules locally using Node 24, run the build and verification commands from the repository root:
-
-Hướng dẫn cài đặt và chạy kiểm thử xác minh cục bộ: sử dụng Node 24 tại thư mục gốc của kho lưu trữ để sinh lại toàn bộ thẻ SVG hai giao diện, cập nhật trang xem trước và kiểm tra tính hợp lệ XML, đồng bộ cấu hình cũng như quy tắc bảo mật:
-
-\`\`\`bash
-node scripts/build-cards.mjs
-node scripts/verify-profile.mjs
-\`\`\`
-
-### Snapshot / Thống kê kỹ thuật
+### Highlights / Thông số thực tế
 
 <p align="left">
   <img src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="${snapAlt}" width="100%">
@@ -569,7 +560,7 @@ export function renderPreviewHtml(config) {
     sanitizeAltText('Tech Stack Matrix covering Machine Learning, Deep Learning, Computer Vision, Robotics, and Software Engineering')
   );
   const snapAlt = escapeHtml(
-    sanitizeAltText('Verified Engineering Snapshot of active repositories and test suites')
+    sanitizeAltText('Real-World Engineering Snapshot highlighting vision mAP, 2D SLAM mapping, ML features, and fleet telemetry')
   );
 
   return `<!DOCTYPE html>
@@ -913,7 +904,7 @@ ${cardsHtml}
 ${focusHtml}
         </div>
 
-        <h3>Software &amp; AI Snapshot</h3>
+        <h3>Real-World Engineering Snapshot</h3>
         <div>
           <img class="theme-img" src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="${snapAlt}">
           <img class="theme-img" src="./assets/snapshot-light.svg#gh-light-mode-only" alt="${snapAlt}">
@@ -923,7 +914,7 @@ ${focusHtml}
       <div class="tabpanel" data-tabpanel="projects" role="tabpanel" hidden>
         <div class="readme-crumb">${escapeHtml(config.username)} / repositories</div>
         <h2>Featured Projects</h2>
-        <p class="subtitle">Verified active builds across Applied AI, machine learning, deep learning, computer vision, robotics, and software engineering.</p>
+        <p class="subtitle">End-to-end builds across Applied AI, machine learning, deep learning, computer vision, robotics, and software engineering.</p>
         <div class="detail-grid">
 ${projectDetailsHtml}
         </div>

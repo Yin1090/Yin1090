@@ -1,39 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="852" height="214" viewBox="0 0 852 214" role="img" aria-label="Verified Engineering Snapshot">
+<svg xmlns="http://www.w3.org/2000/svg" width="852" height="214" viewBox="0 0 852 214" role="img" aria-label="Real-World Engineering Highlights">
   <rect x="0.5" y="0.5" width="130" height="213" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
   <circle cx="65.5" cy="34" r="4" fill="#38bdf8"/>
   <text x="65.5" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">6</text>
-  <text x="65.5" y="120" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">Portfolio Repos</text>
+  <text x="65.5" y="120" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">Active Projects</text>
   <text x="65.5" y="142" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">ML/DL · CV</text>
   <text x="65.5" y="157" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">Robotics</text>
   <rect x="142.5" y="0.5" width="130" height="213" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
   <circle cx="207.5" cy="78" r="34" fill="none" stroke="#21262d" stroke-width="6"/>
-  <circle cx="207.5" cy="78" r="34" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="213.63" stroke-dashoffset="17.09" transform="rotate(-90 207.5 78)"/>
-  <text x="207.5" y="85" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#e6edf3">237</text>
-  <text x="207.5" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">Verified Tests</text>
-  <text x="207.5" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">186 Host + 51 JUnit4</text>
+  <circle cx="207.5" cy="78" r="34" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="213.63" stroke-dashoffset="10.43" transform="rotate(-90 207.5 78)"/>
+  <text x="207.5" y="85" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#e6edf3">95.1%</text>
+  <text x="207.5" y="138" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">Vision mAP@0.5</text>
+  <text x="207.5" y="160" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">YOLOv8n + HSV</text>
   <rect x="284.5" y="0.5" width="130" height="213" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
   <circle cx="349.5" cy="34" r="4" fill="#10b981"/>
-  <text x="349.5" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">5</text>
-  <text x="349.5" y="120" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">Core Domains</text>
-  <text x="349.5" y="142" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">ML · DL</text>
-  <text x="349.5" y="157" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">CV · Apps</text>
+  <text x="349.5" y="86" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#e6edf3">1,000</text>
+  <text x="349.5" y="120" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e6edf3">Fleet Telemetry</text>
+  <text x="349.5" y="144" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#8b949e">3NF SQL · MQTT</text>
   <rect x="430.5" y="0.5" width="421" height="213" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="448" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Verified Engineering Snapshot</text>
-  <text x="448" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">AMR Teleoperation &amp; Sim Suite</text>
-  <text x="834" y="52" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">51 Host + 51 JUnit4</text>
+  <text x="448" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Real-World Engineering Highlights</text>
+  <text x="448" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">Deep Learning &amp; Computer Vision</text>
+  <text x="834" y="52" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">mAP@0.5 0.9512 · 100 Ep</text>
   <rect x="448" y="59" width="386" height="6" rx="3" fill="#21262d"/>
-  <rect x="448" y="59" width="347" height="6" rx="3" fill="#38bdf8"/>
-  <text x="448" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">ML, Deep Learning &amp; Vision</text>
-  <text x="834" y="88" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">mAP 0.9512 · 97-Feat SVM</text>
+  <rect x="448" y="59" width="367" height="6" rx="3" fill="#10b981"/>
+  <text x="448" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">Autonomous AMR &amp; 2D SLAM</text>
+  <text x="834" y="88" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">0.05m Grid · &lt;40cm Lock</text>
   <rect x="448" y="95" width="386" height="6" rx="3" fill="#21262d"/>
-  <rect x="448" y="95" width="355" height="6" rx="3" fill="#10b981"/>
-  <text x="448" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">2-DOF Planar Arm Discrete PID</text>
-  <text x="834" y="124" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">Python/NumPy · 43 Py Tests</text>
+  <rect x="448" y="95" width="351" height="6" rx="3" fill="#38bdf8"/>
+  <text x="448" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">Gesture ML Access Control</text>
+  <text x="834" y="124" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">21 Landmarks · 97 Feats</text>
   <rect x="448" y="131" width="386" height="6" rx="3" fill="#21262d"/>
-  <rect x="448" y="131" width="324" height="6" rx="3" fill="#fb923c"/>
-  <text x="448" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">Warehouse Fleet 3NF &amp; MQTT</text>
-  <text x="834" y="160" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">MySQL 3NF · 19 Py Tests</text>
+  <rect x="448" y="131" width="332" height="6" rx="3" fill="#f59e0b"/>
+  <text x="448" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#e6edf3">2-DOF PID &amp; Warehouse Fleet</text>
+  <text x="834" y="160" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#8b949e">30.01° FK · 1,000 Routes</text>
   <rect x="448" y="167" width="386" height="6" rx="3" fill="#21262d"/>
-  <rect x="448" y="167" width="301" height="6" rx="3" fill="#f59e0b"/>
-  <text x="448" y="198" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.8" fill="#6e7681">100% locally verified metrics — zero external stats</text>
+  <rect x="448" y="167" width="317" height="6" rx="3" fill="#fb923c"/>
+  <text x="448" y="198" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.8" fill="#6e7681">Real engineering benchmarks from public repositories</text>
 </svg>

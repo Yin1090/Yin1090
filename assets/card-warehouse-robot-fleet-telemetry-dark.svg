@@ -29,6 +29,6 @@
   <text x="264.0" y="128.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.2" font-weight="500" fill="#c9d1d9">Tkinter</text>
   <line x1="18" y1="144" x2="402" y2="144" stroke="#21262d" stroke-width="1"/>
   <circle cx="22" cy="158" r="3.5" fill="#f59e0b"/>
-  <text x="31" y="161.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#6e7681">19/19 Py Tests</text>
-  <text x="402" y="161.5" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#8b949e">3NF SQL · MQTT</text>
+  <text x="31" y="161.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#6e7681">6-Tab Fleet Dashboard</text>
+  <text x="402" y="161.5" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#8b949e">1,000 Routes · 3NF</text>
 </svg>

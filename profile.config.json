@@ -83,8 +83,8 @@
       "title": "Hand Gesture Door Lock",
       "domain": "Machine Learning & CV",
       "icon": "shield",
-      "status": "26/26 Tests",
-      "metric": "97-Feat · SVM",
+      "status": "Real-Time Gesture Auth",
+      "metric": "97-Feat · KNN/SVM",
       "accentKey": "amber",
       "url": "https://github.com/Yin1090/hand-gesture-smart-door-lock",
       "description": "21-landmark 97-feature KNN/SVM gesture classifier, 3-step access FSM, PWM actuator control, and alerts.",
@@ -95,8 +95,8 @@
       "title": "AMR Android Controller",
       "domain": "Robotics & Mobile App",
       "icon": "radar",
-      "status": "72 Verified Tests",
-      "metric": "51 JUnit + 21 Py",
+      "status": "3-Screen Android App",
+      "metric": "<40cm 8-Zone LiDAR",
       "accentKey": "cyan",
       "url": "https://github.com/Yin1090/amr-android-controller",
       "description": "3-screen Jetpack Compose cockpit with 8-zone <40cm LiDAR interlock, REST control, and MJPEG stream.",
@@ -107,8 +107,8 @@
       "title": "AMR Cockpit Simulator",
       "domain": "Robotics & Web Sim",
       "icon": "layers",
-      "status": "30/30 Node Tests",
-      "metric": "0.05m SLAM Grid",
+      "status": "2D Physics & SLAM",
+      "metric": "101x99 · 0.05m Grid",
       "accentKey": "blue",
       "url": "https://github.com/Yin1090/amr-cockpit-simulator",
       "description": "Zero-dependency HTML5/ESM AMR cockpit with 2D LiDAR raycasting, 0.05m SLAM grid, and <0.40m halt.",
@@ -119,7 +119,7 @@
       "title": "Hybrid Red Apple Detector",
       "domain": "Deep Learning & CV",
       "icon": "eye",
-      "status": "47/47 Py Tests",
+      "status": "4-Layer Vision Pipeline",
       "metric": "mAP@0.5 0.9512",
       "accentKey": "emerald",
       "url": "https://github.com/Yin1090/hybrid-yolov8-hsv-red-apple-detection",
@@ -131,8 +131,8 @@
       "title": "2-DOF Planar Arm PID",
       "domain": "Robotics & Control",
       "icon": "cpu",
-      "status": "43/43 Py Tests",
-      "metric": "30.0123 deg FK",
+      "status": "Dual-Joint PID Sim",
+      "metric": "30.01° · (6.83, 6.83)",
       "accentKey": "orange",
       "url": "https://github.com/Yin1090/planar-arm-2dof-discrete-pid",
       "description": "Python/NumPy discrete-time dual-joint PID & 2-DOF FK simulator (30.0123 deg, 6.83 XY) with reference VI.",
@@ -143,8 +143,8 @@
       "title": "Warehouse Fleet Telemetry",
       "domain": "Software & Data Stack",
       "icon": "layers",
-      "status": "19/19 Py Tests",
-      "metric": "3NF SQL · MQTT",
+      "status": "6-Tab Fleet Dashboard",
+      "metric": "1,000 Routes · 3NF",
       "accentKey": "amber",
       "url": "https://github.com/Yin1090/warehouse-robot-fleet-telemetry",
       "description": "MySQL 8.0 / SQLite 3NF DB, DENSE_RANK analytics, MQTT telemetry ingestion logger, and 6-tab Tkinter UI.",
@@ -169,18 +169,18 @@
     }
   ],
   "snapshot": {
-    "title": "Verified Engineering Snapshot",
+    "title": "Real-World Engineering Highlights",
     "tiles": [
-      { "label": "Portfolio Repos", "value": "6", "sub": "ML/DL · CV · Robotics", "accentKey": "cyan", "style": "metric" },
-      { "label": "Verified Tests", "value": "237", "sub": "186 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.92 },
-      { "label": "Core Domains", "value": "5", "sub": "ML · DL · CV · Apps", "accentKey": "emerald", "style": "metric" }
+      { "label": "Active Projects", "value": "6", "sub": "ML/DL · CV · Robotics", "accentKey": "cyan", "style": "metric" },
+      { "label": "Vision mAP@0.5", "value": "95.1%", "sub": "YOLOv8n + HSV", "accentKey": "amber", "style": "ring", "ringProgress": 0.9512 },
+      { "label": "Fleet Telemetry", "value": "1,000", "sub": "3NF SQL · MQTT", "accentKey": "emerald", "style": "metric" }
     ],
     "domainBars": [
-      { "label": "AMR Teleoperation & Sim Suite", "metric": "51 Host + 51 JUnit4", "ratio": 0.9, "accentKey": "cyan" },
-      { "label": "ML, Deep Learning & Vision", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.92, "accentKey": "emerald" },
-      { "label": "2-DOF Planar Arm Discrete PID", "metric": "Python/NumPy · 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
-      { "label": "Warehouse Fleet 3NF & MQTT", "metric": "MySQL 3NF · 19 Py Tests", "ratio": 0.78, "accentKey": "amber" }
+      { "label": "Deep Learning & Computer Vision", "metric": "mAP@0.5 0.9512 · 100 Ep", "ratio": 0.95, "accentKey": "emerald" },
+      { "label": "Autonomous AMR & 2D SLAM", "metric": "0.05m Grid · <40cm Lock", "ratio": 0.91, "accentKey": "cyan" },
+      { "label": "Gesture ML Access Control", "metric": "21 Landmarks · 97 Feats", "ratio": 0.86, "accentKey": "amber" },
+      { "label": "2-DOF PID & Warehouse Fleet", "metric": "30.01° FK · 1,000 Routes", "ratio": 0.82, "accentKey": "orange" }
     ],
-    "footnote": "100% locally verified metrics — zero external stats"
+    "footnote": "Real engineering benchmarks from public repositories"
   }
 }
