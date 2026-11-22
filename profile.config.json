@@ -74,7 +74,7 @@
     {
       "group": "Software & Data",
       "accentKey": "cyan",
-      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "SQLite WAL"]
+      "items": ["Python 3.12", "Kotlin Compose", "HTML5 ESM", "Node 24", "MySQL 3NF", "SQLAlchemy", "Tkinter"]
     }
   ],
   "projects": [
@@ -113,18 +113,6 @@
       "url": "https://github.com/Yin1090/amr-cockpit-simulator",
       "description": "Zero-dependency HTML5/ESM AMR cockpit with 2D LiDAR raycasting, 0.05m SLAM grid, and <0.40m halt.",
       "tags": ["HTML5", "Pure ESM JS", "2D SLAM", "Node 24"]
-    },
-    {
-      "id": "htf-agent-harness",
-      "title": "HTF Agent Harness",
-      "domain": "Applied AI & Runtime",
-      "icon": "terminal",
-      "status": "52 Py Tests",
-      "metric": "SQLite WAL · DAG",
-      "accentKey": "teal",
-      "url": "https://github.com/Yin1090/htf-agent-harness",
-      "description": "Zero-dep Python AI agent runtime with SQLite WAL crash recovery, SHA-256 compare-and-swap tools, and DAG planner.",
-      "tags": ["Python 3.12", "SQLite WAL", "SHA-256", "DAG Planner"]
     },
     {
       "id": "hybrid-yolov8-hsv-red-apple-detection",
@@ -170,9 +158,9 @@
       "detail": "97-feature hand-landmark KNN/SVM classification and 4-layer YOLOv8n + CLAHE/HSV detection (mAP@0.5 0.9512)."
     },
     {
-      "title": "Applied AI Agent Runtimes & Robotics",
-      "stack": "Python 3.12 · SQLite WAL · Kotlin Compose · HTML5 ESM",
-      "detail": "Verifiable AI agent runtime (HTF) with crash recovery alongside 3-screen Android AMR controller and 2D SLAM simulator."
+      "title": "Autonomous Mobile Robotics & Sim",
+      "stack": "Kotlin Compose · HTML5 ESM · ROS 2 · 8-Zone LiDAR",
+      "detail": "3-screen Android AMR controller and zero-dep 2D SLAM cockpit simulator with <40cm 8-zone LiDAR safety interlock."
     },
     {
       "title": "Control Simulation & Data Software",
@@ -183,12 +171,12 @@
   "snapshot": {
     "title": "Verified Engineering Snapshot",
     "tiles": [
-      { "label": "Portfolio Repos", "value": "7", "sub": "ML/DL · CV · Robotics", "accentKey": "cyan", "style": "metric" },
-      { "label": "Verified Tests", "value": "289", "sub": "238 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.92 },
+      { "label": "Portfolio Repos", "value": "6", "sub": "ML/DL · CV · Robotics", "accentKey": "cyan", "style": "metric" },
+      { "label": "Verified Tests", "value": "237", "sub": "186 Host + 51 JUnit4", "accentKey": "amber", "style": "ring", "ringProgress": 0.92 },
       { "label": "Core Domains", "value": "5", "sub": "ML · DL · CV · Apps", "accentKey": "emerald", "style": "metric" }
     ],
     "domainBars": [
-      { "label": "HTF AI Runtime & AMR Apps", "metric": "103 Host + 51 JUnit4", "ratio": 0.94, "accentKey": "cyan" },
+      { "label": "AMR Teleoperation & Sim Suite", "metric": "51 Host + 51 JUnit4", "ratio": 0.9, "accentKey": "cyan" },
       { "label": "ML, Deep Learning & Vision", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.92, "accentKey": "emerald" },
       { "label": "2-DOF Planar Arm Discrete PID", "metric": "LabVIEW VI + 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
       { "label": "Warehouse Fleet 3NF & MQTT", "metric": "MySQL 3NF · 19 Py Tests", "ratio": 0.78, "accentKey": "amber" }

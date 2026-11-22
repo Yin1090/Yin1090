@@ -415,10 +415,6 @@ export function renderReadmeMd(config) {
       en: 'Zero-dependency HTML5/ESM AMR cockpit and 2D physics/SLAM simulator with raycasted 8-zone LiDAR, 0.05 m occupancy grid, 640x480 tactical HUD, and automatic <0.40 m obstacle halt (30 Node tests).',
       vi: 'Trình mô phỏng buồng lái và vật lý AMR thuần HTML5/ESM không thư viện ngoài, mô phỏng quét LiDAR 2D 8 vùng, bản đồ SLAM 0.05 m/ô và cơ chế tự dừng khi vật cản dưới 0.40 m (30 kiểm thử Node).',
     },
-    'htf-agent-harness': {
-      en: 'Verifiable zero-dependency Python 3.11+ AI agent execution runtime with SQLite WAL transactional state, crash-safe intent recovery, SHA-256 compare-and-swap file tools, and DAG scope planner (52 Python tests).',
-      vi: 'Nền tảng thực thi AI Agent thuần Python 3.11+ không thư viện ngoài, tích hợp lưu trạng thái giao dịch SQLite WAL, phục hồi an toàn sau lỗi, chỉnh sửa tệp kiểm chứng SHA-256 và lập lịch DAG theo phạm vi (52 kiểm thử Python).',
-    },
     'hybrid-yolov8-hsv-red-apple-detection': {
       en: '4-layer deep learning and computer vision detector combining YOLOv8n, CLAHE-V contrast normalization, adaptive split-range HSV, geometric filtering, and NMS fusion achieving mAP@0.5 0.9512 (47 Python tests).',
       vi: 'Hệ thống học sâu (Deep Learning) và thị giác máy tính 4 tầng kết hợp YOLOv8n, cân bằng sáng CLAHE kênh V, lọc màu HSV hai dải thích ứng, lọc hình học và NMS đạt mAP@0.5 0.9512 (47 kiểm thử Python).',
@@ -455,9 +451,9 @@ export function renderReadmeMd(config) {
 
 ### Overview / Tổng quan
 
-This GitHub profile presents an integrated engineering portfolio across **Applied AI**, **Machine Learning**, **Deep Learning**, **Computer Vision**, **Robotics**, and **Software** engineering. Every linked repository ships runnable source code, calibrated datasets, and automated offline verification covering 289 verified tests across 7 repositories.
+This GitHub profile presents an integrated engineering portfolio across **Applied AI**, **Machine Learning**, **Deep Learning**, **Computer Vision**, **Robotics**, and **Software** engineering. Every linked repository ships runnable source code, calibrated datasets, and automated offline verification covering 237 verified tests across 6 repositories.
 
-Hồ sơ GitHub này giới thiệu danh mục dự án kỹ thuật trong các lĩnh vực **Applied AI**, **Machine Learning** (máy học), **Deep Learning** (học sâu), **Computer Vision** (thị giác máy tính), **Robotics** và **Software** (kỹ thuật phần mềm). Mỗi kho lưu trữ đều đi kèm mã nguồn chạy thực tế, bộ dữ liệu chuẩn hóa và quy trình kiểm thử tự động (289 kiểm thử trên 7 dự án).
+Hồ sơ GitHub này giới thiệu danh mục dự án kỹ thuật trong các lĩnh vực **Applied AI**, **Machine Learning** (máy học), **Deep Learning** (học sâu), **Computer Vision** (thị giác máy tính), **Robotics** và **Software** (kỹ thuật phần mềm). Mỗi kho lưu trữ đều đi kèm mã nguồn chạy thực tế, bộ dữ liệu chuẩn hóa và quy trình kiểm thử tự động (237 kiểm thử trên 6 dự án).
 
 ### Tech Stack / Công nghệ cốt lõi
 
