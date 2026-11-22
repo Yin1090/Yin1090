@@ -69,7 +69,7 @@
     {
       "group": "Robotics & Vision",
       "accentKey": "emerald",
-      "items": ["ROS 2 Jazzy", "CLAHE + HSV", "RPLiDAR C1", "8-Zone LiDAR", "2-DOF PID", "LabVIEW VI", "MQTT Telemetry"]
+      "items": ["ROS 2 Jazzy", "CLAHE + HSV", "2D SLAM", "RPLiDAR C1", "8-Zone LiDAR", "2-DOF PID", "MQTT Telemetry"]
     },
     {
       "group": "Software & Data",
@@ -135,8 +135,8 @@
       "metric": "30.0123 deg FK",
       "accentKey": "orange",
       "url": "https://github.com/Yin1090/planar-arm-2dof-discrete-pid",
-      "description": "LabVIEW FINAL2.vi & bit-exact Python/NumPy discrete PID + 2-DOF kinematics (30.0123 deg, 6.83 XY).",
-      "tags": ["LabVIEW VI", "Python", "NumPy", "2-DOF FK"]
+      "description": "Python/NumPy discrete-time dual-joint PID & 2-DOF FK simulator (30.0123 deg, 6.83 XY) with reference VI.",
+      "tags": ["Python", "NumPy", "Discrete PID", "2-DOF FK"]
     },
     {
       "id": "warehouse-robot-fleet-telemetry",
@@ -164,7 +164,7 @@
     },
     {
       "title": "Control Simulation & Data Software",
-      "stack": "LabVIEW VI · NumPy · MySQL 3NF · SQLAlchemy · MQTT",
+      "stack": "Python · NumPy · MySQL 3NF · SQLAlchemy · MQTT",
       "detail": "Dual-joint discrete PID & 2-DOF FK simulator paired with 3NF MySQL/SQLite fleet analytics and MQTT telemetry ingestion."
     }
   ],
@@ -178,7 +178,7 @@
     "domainBars": [
       { "label": "AMR Teleoperation & Sim Suite", "metric": "51 Host + 51 JUnit4", "ratio": 0.9, "accentKey": "cyan" },
       { "label": "ML, Deep Learning & Vision", "metric": "mAP 0.9512 · 97-Feat SVM", "ratio": 0.92, "accentKey": "emerald" },
-      { "label": "2-DOF Planar Arm Discrete PID", "metric": "LabVIEW VI + 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
+      { "label": "2-DOF Planar Arm Discrete PID", "metric": "Python/NumPy · 43 Py Tests", "ratio": 0.84, "accentKey": "orange" },
       { "label": "Warehouse Fleet 3NF & MQTT", "metric": "MySQL 3NF · 19 Py Tests", "ratio": 0.78, "accentKey": "amber" }
     ],
     "footnote": "100% locally verified metrics — zero external stats"

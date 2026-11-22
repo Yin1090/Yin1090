@@ -420,8 +420,8 @@ export function renderReadmeMd(config) {
       vi: 'Hệ thống học sâu (Deep Learning) và thị giác máy tính 4 tầng kết hợp YOLOv8n, cân bằng sáng CLAHE kênh V, lọc màu HSV hai dải thích ứng, lọc hình học và NMS đạt mAP@0.5 0.9512 (47 kiểm thử Python).',
     },
     'planar-arm-2dof-discrete-pid': {
-      en: 'Dual LabVIEW 22.3.7 FINAL2.vi and bit-exact Python/NumPy discrete-time dual-joint PID controller with 2-DOF planar forward kinematics reaching 30.0123 deg and (6.83, 6.83) XY (43 Python tests).',
-      vi: 'Bộ điều khiển PID rời rạc hai khớp và động học thuận cánh tay phẳng 2 bậc tự do triển khai song song trên LabVIEW 22.3.7 và Python/NumPy đạt 30.0123 độ tại tọa độ (6.83, 6.83) (43 kiểm thử Python).',
+      en: 'Python/NumPy discrete-time dual-joint PID controller and 2-DOF planar forward kinematics simulator reaching 30.0123 deg and (6.83, 6.83) XY, accompanied by a reference LabVIEW VI (43 Python tests).',
+      vi: 'Bộ mô phỏng điều khiển PID rời rạc hai khớp và động học thuận cánh tay phẳng 2 bậc tự do bằng Python/NumPy đạt 30.0123 độ tại tọa độ (6.83, 6.83), kèm tệp LabVIEW VI đối chiếu (43 kiểm thử Python).',
     },
     'warehouse-robot-fleet-telemetry': {
       en: 'MySQL 8.0 and SQLite 3NF fleet database with DENSE_RANK analytics over 1,000 route rows, sanitized MQTT telemetry ingestion logger, and 6-tab Tkinter dashboard (19 Python tests).',

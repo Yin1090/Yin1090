@@ -28,7 +28,7 @@
   <rect x="448" y="95" width="386" height="6" rx="3" fill="#eaeef2"/>
   <rect x="448" y="95" width="355" height="6" rx="3" fill="#059669"/>
   <text x="448" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#1f2328">2-DOF Planar Arm Discrete PID</text>
-  <text x="834" y="124" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#57606a">LabVIEW VI + 43 Py Tests</text>
+  <text x="834" y="124" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#57606a">Python/NumPy · 43 Py Tests</text>
   <rect x="448" y="131" width="386" height="6" rx="3" fill="#eaeef2"/>
   <rect x="448" y="131" width="324" height="6" rx="3" fill="#ea580c"/>
   <text x="448" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.2" font-weight="600" fill="#1f2328">Warehouse Fleet 3NF &amp; MQTT</text>
