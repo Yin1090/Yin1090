@@ -1,0 +1,34 @@
+name: Profile CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Build cards and local preview
+        run: node scripts/build-cards.mjs
+
+      - name: Check committed README and SVGs match config
+        run: git diff --exit-code README.md assets/
+
+      - name: Run profile verification gate
+        run: node scripts/verify-profile.mjs
