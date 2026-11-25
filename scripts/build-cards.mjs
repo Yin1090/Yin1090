@@ -389,10 +389,14 @@ export function renderReadmeMd(config) {
     .map((p) => {
       const alt = escapeHtml(sanitizeAltText(`${p.title} - ${p.domain} (${p.metric})`));
       const url = escapeHtml(p.url);
+      const id = escapeHtml(p.id);
       return [
         `  <a href="${url}">`,
-        `    <img src="./assets/card-${escapeHtml(p.id)}-dark.svg#gh-dark-mode-only" alt="${alt}" width="49%">`,
-        `    <img src="./assets/card-${escapeHtml(p.id)}-light.svg#gh-light-mode-only" alt="${alt}" width="49%">`,
+        `    <picture>`,
+        `      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-${id}-dark.svg">`,
+        `      <source media="(prefers-color-scheme: light)" srcset="./assets/card-${id}-light.svg">`,
+        `      <img src="./assets/card-${id}-light.svg" alt="${alt}" width="49%">`,
+        `    </picture>`,
         `  </a>`,
       ].join('\n');
     })
@@ -458,8 +462,11 @@ Hồ sơ GitHub này giới thiệu 6 dự án kỹ thuật hoàn chỉnh trong 
 ### Tech Stack / Công nghệ cốt lõi
 
 <p align="left">
-  <img src="./assets/tech-stack-dark.svg#gh-dark-mode-only" alt="${techAlt}" width="100%">
-  <img src="./assets/tech-stack-light.svg#gh-light-mode-only" alt="${techAlt}" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/tech-stack-light.svg">
+    <img src="./assets/tech-stack-light.svg" alt="${techAlt}" width="100%">
+  </picture>
 </p>
 
 ### Architecture & Featured Repositories / Kiến trúc & Dự án nổi bật
@@ -481,8 +488,11 @@ ${focusRows}
 ### Highlights / Thông số thực tế
 
 <p align="left">
-  <img src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="${snapAlt}" width="100%">
-  <img src="./assets/snapshot-light.svg#gh-light-mode-only" alt="${snapAlt}" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snapshot-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snapshot-light.svg">
+    <img src="./assets/snapshot-light.svg" alt="${snapAlt}" width="100%">
+  </picture>
 </p>
 `;
 }

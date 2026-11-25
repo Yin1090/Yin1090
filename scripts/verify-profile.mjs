@@ -574,14 +574,19 @@ function verifySyncAndAssets(config) {
     }
   }
 
-  // Verify every card & summary uses both #gh-dark-mode-only and #gh-light-mode-only
+  // Verify every card & summary uses dual-theme <picture> in README.md and #gh-*-mode-only in preview.html
+  if (readme.includes('#gh-dark-mode-only') || readme.includes('#gh-light-mode-only')) {
+    throw new Error('README.md must use <picture> media queries instead of #gh-*-mode-only fragments');
+  }
   const pairs = [...config.projects.map((p) => `card-${p.id}`), 'tech-stack', 'snapshot'];
   for (const prefix of pairs) {
+    const darkSource = `media="(prefers-color-scheme: dark)" srcset="./assets/${prefix}-dark.svg"`;
+    const lightSource = `media="(prefers-color-scheme: light)" srcset="./assets/${prefix}-light.svg"`;
+    if (!readme.includes(darkSource) || !readme.includes(lightSource)) {
+      throw new Error(`README.md missing dual-theme <picture> sources for ${prefix}`);
+    }
     const darkFrag = `./assets/${prefix}-dark.svg#gh-dark-mode-only`;
     const lightFrag = `./assets/${prefix}-light.svg#gh-light-mode-only`;
-    if (!readme.includes(darkFrag) || !readme.includes(lightFrag)) {
-      throw new Error(`README.md missing dual-theme fragments for ${prefix}`);
-    }
     if (!preview.includes(darkFrag) || !preview.includes(lightFrag)) {
       throw new Error(`preview.html missing dual-theme fragments for ${prefix}`);
     }

@@ -13,36 +13,57 @@ Hồ sơ GitHub này giới thiệu 6 dự án kỹ thuật hoàn chỉnh trong 
 ### Tech Stack / Công nghệ cốt lõi
 
 <p align="left">
-  <img src="./assets/tech-stack-dark.svg#gh-dark-mode-only" alt="Tech Stack Matrix covering Machine Learning, Deep Learning, Computer Vision, Robotics, and Software Engineering" width="100%">
-  <img src="./assets/tech-stack-light.svg#gh-light-mode-only" alt="Tech Stack Matrix covering Machine Learning, Deep Learning, Computer Vision, Robotics, and Software Engineering" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/tech-stack-light.svg">
+    <img src="./assets/tech-stack-light.svg" alt="Tech Stack Matrix covering Machine Learning, Deep Learning, Computer Vision, Robotics, and Software Engineering" width="100%">
+  </picture>
 </p>
 
 ### Architecture & Featured Repositories / Kiến trúc & Dự án nổi bật
 
 <p align="left">
   <a href="https://github.com/Yin1090/hand-gesture-smart-door-lock">
-    <img src="./assets/card-hand-gesture-smart-door-lock-dark.svg#gh-dark-mode-only" alt="Hand Gesture Door Lock - Machine Learning &amp; CV (97-Feat · KNN/SVM)" width="49%">
-    <img src="./assets/card-hand-gesture-smart-door-lock-light.svg#gh-light-mode-only" alt="Hand Gesture Door Lock - Machine Learning &amp; CV (97-Feat · KNN/SVM)" width="49%">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-hand-gesture-smart-door-lock-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/card-hand-gesture-smart-door-lock-light.svg">
+      <img src="./assets/card-hand-gesture-smart-door-lock-light.svg" alt="Hand Gesture Door Lock - Machine Learning &amp; CV (97-Feat · KNN/SVM)" width="49%">
+    </picture>
   </a>
   <a href="https://github.com/Yin1090/amr-android-controller">
-    <img src="./assets/card-amr-android-controller-dark.svg#gh-dark-mode-only" alt="AMR Android Controller - Robotics &amp; Mobile App (&lt;40cm 8-Zone LiDAR)" width="49%">
-    <img src="./assets/card-amr-android-controller-light.svg#gh-light-mode-only" alt="AMR Android Controller - Robotics &amp; Mobile App (&lt;40cm 8-Zone LiDAR)" width="49%">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-amr-android-controller-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/card-amr-android-controller-light.svg">
+      <img src="./assets/card-amr-android-controller-light.svg" alt="AMR Android Controller - Robotics &amp; Mobile App (&lt;40cm 8-Zone LiDAR)" width="49%">
+    </picture>
   </a>
   <a href="https://github.com/Yin1090/amr-cockpit-simulator">
-    <img src="./assets/card-amr-cockpit-simulator-dark.svg#gh-dark-mode-only" alt="AMR Cockpit Simulator - Robotics &amp; Web Sim (101x99 · 0.05m Grid)" width="49%">
-    <img src="./assets/card-amr-cockpit-simulator-light.svg#gh-light-mode-only" alt="AMR Cockpit Simulator - Robotics &amp; Web Sim (101x99 · 0.05m Grid)" width="49%">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-amr-cockpit-simulator-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/card-amr-cockpit-simulator-light.svg">
+      <img src="./assets/card-amr-cockpit-simulator-light.svg" alt="AMR Cockpit Simulator - Robotics &amp; Web Sim (101x99 · 0.05m Grid)" width="49%">
+    </picture>
   </a>
   <a href="https://github.com/Yin1090/hybrid-yolov8-hsv-red-apple-detection">
-    <img src="./assets/card-hybrid-yolov8-hsv-red-apple-detection-dark.svg#gh-dark-mode-only" alt="Hybrid Red Apple Detector - Deep Learning &amp; CV (mAP@0.5 0.9512)" width="49%">
-    <img src="./assets/card-hybrid-yolov8-hsv-red-apple-detection-light.svg#gh-light-mode-only" alt="Hybrid Red Apple Detector - Deep Learning &amp; CV (mAP@0.5 0.9512)" width="49%">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-hybrid-yolov8-hsv-red-apple-detection-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/card-hybrid-yolov8-hsv-red-apple-detection-light.svg">
+      <img src="./assets/card-hybrid-yolov8-hsv-red-apple-detection-light.svg" alt="Hybrid Red Apple Detector - Deep Learning &amp; CV (mAP@0.5 0.9512)" width="49%">
+    </picture>
   </a>
   <a href="https://github.com/Yin1090/planar-arm-2dof-discrete-pid">
-    <img src="./assets/card-planar-arm-2dof-discrete-pid-dark.svg#gh-dark-mode-only" alt="2-DOF Planar Arm PID - Robotics &amp; Control (30.01° · (6.83, 6.83))" width="49%">
-    <img src="./assets/card-planar-arm-2dof-discrete-pid-light.svg#gh-light-mode-only" alt="2-DOF Planar Arm PID - Robotics &amp; Control (30.01° · (6.83, 6.83))" width="49%">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-planar-arm-2dof-discrete-pid-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/card-planar-arm-2dof-discrete-pid-light.svg">
+      <img src="./assets/card-planar-arm-2dof-discrete-pid-light.svg" alt="2-DOF Planar Arm PID - Robotics &amp; Control (30.01° · (6.83, 6.83))" width="49%">
+    </picture>
   </a>
   <a href="https://github.com/Yin1090/warehouse-robot-fleet-telemetry">
-    <img src="./assets/card-warehouse-robot-fleet-telemetry-dark.svg#gh-dark-mode-only" alt="Warehouse Fleet Telemetry - Software &amp; Data Stack (1,000 Routes · 3NF)" width="49%">
-    <img src="./assets/card-warehouse-robot-fleet-telemetry-light.svg#gh-light-mode-only" alt="Warehouse Fleet Telemetry - Software &amp; Data Stack (1,000 Routes · 3NF)" width="49%">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/card-warehouse-robot-fleet-telemetry-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/card-warehouse-robot-fleet-telemetry-light.svg">
+      <img src="./assets/card-warehouse-robot-fleet-telemetry-light.svg" alt="Warehouse Fleet Telemetry - Software &amp; Data Stack (1,000 Routes · 3NF)" width="49%">
+    </picture>
   </a>
 </p>
 
@@ -66,6 +87,9 @@ Hồ sơ GitHub này giới thiệu 6 dự án kỹ thuật hoàn chỉnh trong 
 ### Highlights / Thông số thực tế
 
 <p align="left">
-  <img src="./assets/snapshot-dark.svg#gh-dark-mode-only" alt="Real-World Engineering Snapshot highlighting vision mAP, 2D SLAM mapping, ML features, and fleet telemetry" width="100%">
-  <img src="./assets/snapshot-light.svg#gh-light-mode-only" alt="Real-World Engineering Snapshot highlighting vision mAP, 2D SLAM mapping, ML features, and fleet telemetry" width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snapshot-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snapshot-light.svg">
+    <img src="./assets/snapshot-light.svg" alt="Real-World Engineering Snapshot highlighting vision mAP, 2D SLAM mapping, ML features, and fleet telemetry" width="100%">
+  </picture>
 </p>
